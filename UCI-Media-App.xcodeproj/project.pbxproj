@@ -8,11 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C036410B19C9E1FF0096185A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C036410A19C9E1FF0096185A /* AppDelegate.swift */; };
-		C036410D19C9E1FF0096185A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C036410C19C9E1FF0096185A /* ViewController.swift */; };
 		C036411019C9E1FF0096185A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C036410E19C9E1FF0096185A /* Main.storyboard */; };
 		C036411219C9E1FF0096185A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C036411119C9E1FF0096185A /* Images.xcassets */; };
 		C036411519C9E1FF0096185A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C036411319C9E1FF0096185A /* LaunchScreen.xib */; };
 		C036412119C9E1FF0096185A /* SplitAndPopoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C036412019C9E1FF0096185A /* SplitAndPopoverTests.swift */; };
+		C036412B19C9E28E0096185A /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C036412A19C9E28E0096185A /* XMLParser.swift */; };
+		C036412D19C9E3170096185A /* ArticlesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C036412C19C9E3170096185A /* ArticlesTableViewController.swift */; };
+		C036412F19C9E32B0096185A /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C036412E19C9E32B0096185A /* ArticleViewController.swift */; };
+		C036413119C9E33A0096185A /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C036413019C9E33A0096185A /* ContainerViewController.swift */; };
+		C03BDB4F19D0B36D002537F1 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BDB4E19D0B36D002537F1 /* PopoverViewController.swift */; };
+		C1B0FCE11C028F730007510F /* citation.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCDB1C028F730007510F /* citation.png */; settings = {ASSET_TAGS = (); }; };
+		C1B0FCE21C028F730007510F /* New U Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCDC1C028F730007510F /* New U Logo.jpg */; settings = {ASSET_TAGS = (); }; };
+		C1B0FCE31C028F730007510F /* comedy2.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCDD1C028F730007510F /* comedy2.png */; settings = {ASSET_TAGS = (); }; };
+		C1B0FCE41C028F730007510F /* edit18.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCDE1C028F730007510F /* edit18.png */; settings = {ASSET_TAGS = (); }; };
+		C1B0FCE51C028F730007510F /* news29.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCDF1C028F730007510F /* news29.png */; settings = {ASSET_TAGS = (); }; };
+		C1B0FCE61C028F730007510F /* soccer19.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCE01C028F730007510F /* soccer19.png */; settings = {ASSET_TAGS = (); }; };
+		C1B0FCE81C0294710007510F /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B0FCE71C0294710007510F /* cell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +37,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C036410519C9E1FF0096185A /* SplitAndPopover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitAndPopover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C036410519C9E1FF0096185A /* UCI-Media-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UCI-Media-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C036410919C9E1FF0096185A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C036410A19C9E1FF0096185A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C036410C19C9E1FF0096185A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C036410F19C9E1FF0096185A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C036411119C9E1FF0096185A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C036411419C9E1FF0096185A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C036411A19C9E1FF0096185A /* SplitAndPopoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitAndPopoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C036411A19C9E1FF0096185A /* UCI-Media-App.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UCI-Media-App.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C036411F19C9E1FF0096185A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C036412019C9E1FF0096185A /* SplitAndPopoverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitAndPopoverTests.swift; sourceTree = "<group>"; };
+		C036412A19C9E28E0096185A /* XMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
+		C036412C19C9E3170096185A /* ArticlesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewController.swift; sourceTree = "<group>"; };
+		C036412E19C9E32B0096185A /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		C036413019C9E33A0096185A /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		C03BDB4E19D0B36D002537F1 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		C1B0FCDB1C028F730007510F /* citation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = citation.png; sourceTree = "<group>"; };
+		C1B0FCDC1C028F730007510F /* New U Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "New U Logo.jpg"; sourceTree = "<group>"; };
+		C1B0FCDD1C028F730007510F /* comedy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comedy2.png; sourceTree = "<group>"; };
+		C1B0FCDE1C028F730007510F /* edit18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit18.png; sourceTree = "<group>"; };
+		C1B0FCDF1C028F730007510F /* news29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news29.png; sourceTree = "<group>"; };
+		C1B0FCE01C028F730007510F /* soccer19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soccer19.png; sourceTree = "<group>"; };
+		C1B0FCE71C0294710007510F /* cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +81,8 @@
 		C03640FC19C9E1FF0096185A = {
 			isa = PBXGroup;
 			children = (
-				C036410719C9E1FF0096185A /* SplitAndPopover */,
-				C036411D19C9E1FF0096185A /* SplitAndPopoverTests */,
+				C036410719C9E1FF0096185A /* UCI-Media-App */,
+				C036411D19C9E1FF0096185A /* UCI-Media-App-Tests */,
 				C036410619C9E1FF0096185A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,22 +90,34 @@
 		C036410619C9E1FF0096185A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C036410519C9E1FF0096185A /* SplitAndPopover.app */,
-				C036411A19C9E1FF0096185A /* SplitAndPopoverTests.xctest */,
+				C036410519C9E1FF0096185A /* UCI-Media-App.app */,
+				C036411A19C9E1FF0096185A /* UCI-Media-App.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C036410719C9E1FF0096185A /* SplitAndPopover */ = {
+		C036410719C9E1FF0096185A /* UCI-Media-App */ = {
 			isa = PBXGroup;
 			children = (
 				C036410A19C9E1FF0096185A /* AppDelegate.swift */,
-				C036410C19C9E1FF0096185A /* ViewController.swift */,
+				C036412A19C9E28E0096185A /* XMLParser.swift */,
+				C036413019C9E33A0096185A /* ContainerViewController.swift */,
+				C036412C19C9E3170096185A /* ArticlesTableViewController.swift */,
+				C1B0FCE71C0294710007510F /* cell.swift */,
+				C036412E19C9E32B0096185A /* ArticleViewController.swift */,
+				C03BDB4E19D0B36D002537F1 /* PopoverViewController.swift */,
+				C1B0FCDB1C028F730007510F /* citation.png */,
+				C1B0FCDC1C028F730007510F /* New U Logo.jpg */,
+				C1B0FCDD1C028F730007510F /* comedy2.png */,
+				C1B0FCDE1C028F730007510F /* edit18.png */,
+				C1B0FCDF1C028F730007510F /* news29.png */,
+				C1B0FCE01C028F730007510F /* soccer19.png */,
 				C036410E19C9E1FF0096185A /* Main.storyboard */,
 				C036411119C9E1FF0096185A /* Images.xcassets */,
 				C036411319C9E1FF0096185A /* LaunchScreen.xib */,
 				C036410819C9E1FF0096185A /* Supporting Files */,
 			);
+			name = "UCI-Media-App";
 			path = SplitAndPopover;
 			sourceTree = "<group>";
 		};
@@ -95,12 +129,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C036411D19C9E1FF0096185A /* SplitAndPopoverTests */ = {
+		C036411D19C9E1FF0096185A /* UCI-Media-App-Tests */ = {
 			isa = PBXGroup;
 			children = (
 				C036412019C9E1FF0096185A /* SplitAndPopoverTests.swift */,
 				C036411E19C9E1FF0096185A /* Supporting Files */,
 			);
+			name = "UCI-Media-App-Tests";
 			path = SplitAndPopoverTests;
 			sourceTree = "<group>";
 		};
@@ -115,9 +150,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C036410419C9E1FF0096185A /* SplitAndPopover */ = {
+		C036410419C9E1FF0096185A /* UCI-Media-App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C036412419C9E1FF0096185A /* Build configuration list for PBXNativeTarget "SplitAndPopover" */;
+			buildConfigurationList = C036412419C9E1FF0096185A /* Build configuration list for PBXNativeTarget "UCI-Media-App" */;
 			buildPhases = (
 				C036410119C9E1FF0096185A /* Sources */,
 				C036410219C9E1FF0096185A /* Frameworks */,
@@ -127,14 +162,14 @@
 			);
 			dependencies = (
 			);
-			name = SplitAndPopover;
+			name = "UCI-Media-App";
 			productName = SplitAndPopover;
-			productReference = C036410519C9E1FF0096185A /* SplitAndPopover.app */;
+			productReference = C036410519C9E1FF0096185A /* UCI-Media-App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C036411919C9E1FF0096185A /* SplitAndPopoverTests */ = {
+		C036411919C9E1FF0096185A /* UCI-Media-AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C036412719C9E1FF0096185A /* Build configuration list for PBXNativeTarget "SplitAndPopoverTests" */;
+			buildConfigurationList = C036412719C9E1FF0096185A /* Build configuration list for PBXNativeTarget "UCI-Media-AppTests" */;
 			buildPhases = (
 				C036411619C9E1FF0096185A /* Sources */,
 				C036411719C9E1FF0096185A /* Frameworks */,
@@ -145,9 +180,9 @@
 			dependencies = (
 				C036411C19C9E1FF0096185A /* PBXTargetDependency */,
 			);
-			name = SplitAndPopoverTests;
+			name = "UCI-Media-AppTests";
 			productName = SplitAndPopoverTests;
-			productReference = C036411A19C9E1FF0096185A /* SplitAndPopoverTests.xctest */;
+			productReference = C036411A19C9E1FF0096185A /* UCI-Media-App.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -156,6 +191,8 @@
 		C03640FD19C9E1FF0096185A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Appcoda;
 				TargetAttributes = {
@@ -168,7 +205,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C036410019C9E1FF0096185A /* Build configuration list for PBXProject "SplitAndPopover" */;
+			buildConfigurationList = C036410019C9E1FF0096185A /* Build configuration list for PBXProject "UCI-Media-App" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -181,8 +218,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C036410419C9E1FF0096185A /* SplitAndPopover */,
-				C036411919C9E1FF0096185A /* SplitAndPopoverTests */,
+				C036410419C9E1FF0096185A /* UCI-Media-App */,
+				C036411919C9E1FF0096185A /* UCI-Media-AppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -193,8 +230,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C036411019C9E1FF0096185A /* Main.storyboard in Resources */,
+				C1B0FCE41C028F730007510F /* edit18.png in Resources */,
+				C1B0FCE21C028F730007510F /* New U Logo.jpg in Resources */,
+				C1B0FCE61C028F730007510F /* soccer19.png in Resources */,
 				C036411519C9E1FF0096185A /* LaunchScreen.xib in Resources */,
+				C1B0FCE11C028F730007510F /* citation.png in Resources */,
+				C1B0FCE51C028F730007510F /* news29.png in Resources */,
 				C036411219C9E1FF0096185A /* Images.xcassets in Resources */,
+				C1B0FCE31C028F730007510F /* comedy2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +255,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C036410D19C9E1FF0096185A /* ViewController.swift in Sources */,
 				C036410B19C9E1FF0096185A /* AppDelegate.swift in Sources */,
+				C03BDB4F19D0B36D002537F1 /* PopoverViewController.swift in Sources */,
+				C036412F19C9E32B0096185A /* ArticleViewController.swift in Sources */,
+				C036412B19C9E28E0096185A /* XMLParser.swift in Sources */,
+				C036413119C9E33A0096185A /* ContainerViewController.swift in Sources */,
+				C1B0FCE81C0294710007510F /* cell.swift in Sources */,
+				C036412D19C9E3170096185A /* ArticlesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +278,7 @@
 /* Begin PBXTargetDependency section */
 		C036411C19C9E1FF0096185A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C036410419C9E1FF0096185A /* SplitAndPopover */;
+			target = C036410419C9E1FF0096185A /* UCI-Media-App */;
 			targetProxy = C036411B19C9E1FF0096185A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -338,7 +386,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SplitAndPopover/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mau.UCI-media-app";
+				PRODUCT_NAME = "UCI-Media-App";
 			};
 			name = Debug;
 		};
@@ -348,7 +397,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SplitAndPopover/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mau.UCI-media-app";
+				PRODUCT_NAME = "UCI-Media-App";
 			};
 			name = Release;
 		};
@@ -366,8 +416,8 @@
 				);
 				INFOPLIST_FILE = SplitAndPopoverTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SplitAndPopover.app/SplitAndPopover";
+				PRODUCT_NAME = "UCI-Media-App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UCI-Media-App.app/UCI-Media-App";
 			};
 			name = Debug;
 		};
@@ -381,15 +431,15 @@
 				);
 				INFOPLIST_FILE = SplitAndPopoverTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SplitAndPopover.app/SplitAndPopover";
+				PRODUCT_NAME = "UCI-Media-App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UCI-Media-App.app/UCI-Media-App";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C036410019C9E1FF0096185A /* Build configuration list for PBXProject "SplitAndPopover" */ = {
+		C036410019C9E1FF0096185A /* Build configuration list for PBXProject "UCI-Media-App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C036412219C9E1FF0096185A /* Debug */,
@@ -398,21 +448,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C036412419C9E1FF0096185A /* Build configuration list for PBXNativeTarget "SplitAndPopover" */ = {
+		C036412419C9E1FF0096185A /* Build configuration list for PBXNativeTarget "UCI-Media-App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C036412519C9E1FF0096185A /* Debug */,
 				C036412619C9E1FF0096185A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		C036412719C9E1FF0096185A /* Build configuration list for PBXNativeTarget "SplitAndPopoverTests" */ = {
+		C036412719C9E1FF0096185A /* Build configuration list for PBXNativeTarget "UCI-Media-AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C036412819C9E1FF0096185A /* Debug */,
 				C036412919C9E1FF0096185A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

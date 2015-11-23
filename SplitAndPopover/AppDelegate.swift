@@ -9,13 +9,31 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
 
+    var splitViewController : UISplitViewController?
 
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        UINavigationBar.appearance().tintColor = UIColor(red: 48/255, green: 90/255, blue: 188/255, alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = UIColor(red: 48/255, green: 90/255, blue: 188/255, alpha: 1.0)
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+
+        UIToolbar.appearance().barTintColor = UIColor(red: 48/255, green: 90/255, blue: 188/255, alpha: 1.0)
+        UIToolbar.appearance().tintColor = UIColor(red: 48/255, green: 90/255, blue: 188/255, alpha: 1.0)
+        splitViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("idSplitViewController") as? UISplitViewController
+        splitViewController?.delegate = self
+        
+        splitViewController?.preferredDisplayMode = UISplitViewControllerDisplayMode.AllVisible
+        
+        let containerViewController : ContainerViewController = ContainerViewController()
+        containerViewController.setEmbeddedViewController(splitViewController)
+        
+        window?.rootViewController = containerViewController
+        
         return true
     }
 
@@ -42,5 +60,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    // MARK: UISplitViewControllerDelegate method implementation
+
+    /*
+    func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController: UIViewController!, ontoPrimaryViewController primaryViewController: UIViewController!) -> Bool {
+        
+        return true
+    }
+    */
+    
+    func targetDisplayModeForActionInSplitViewController(svc: UISplitViewController) -> UISplitViewControllerDisplayMode {
+        return UISplitViewControllerDisplayMode.PrimaryHidden
+    }
+    
+    
+    
 }
 
