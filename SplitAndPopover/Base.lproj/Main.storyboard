@@ -46,7 +46,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="OYE-8U-uuG" firstAttribute="top" secondItem="1Qh-AD-vck" secondAttribute="topMargin" id="CyO-3T-ANB"/>
-                            <constraint firstItem="OYE-8U-uuG" firstAttribute="centerX" secondItem="1Qh-AD-vck" secondAttribute="centerX" id="NfA-6y-3og"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8NS-cO-Nur" secondAttribute="trailing" constant="-16" id="c2z-9b-MKL"/>
                             <constraint firstItem="vcH-xY-vm2" firstAttribute="top" secondItem="8NS-cO-Nur" secondAttribute="bottom" id="crW-es-xa6"/>
                             <constraint firstAttribute="centerX" secondItem="U9V-Rn-GH4" secondAttribute="centerX" id="d4e-oE-suE"/>
