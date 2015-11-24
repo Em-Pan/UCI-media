@@ -198,6 +198,7 @@
 				TargetAttributes = {
 					C036410419C9E1FF0096185A = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = Q56A542RKN;
 					};
 					C036411919C9E1FF0096185A = {
 						CreatedOnToolsVersion = 6.0;
@@ -384,10 +385,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SplitAndPopover/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mau.UCI-media-app";
 				PRODUCT_NAME = "UCI-Media-App";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -395,10 +399,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SplitAndPopover/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mau.UCI-media-app";
 				PRODUCT_NAME = "UCI-Media-App";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -113,11 +113,10 @@ class ArticlesTableViewController: UITableViewController, XMLParserDelegate {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let currentDictionary = xmlParser.arrParsedData[indexPath.row] as Dictionary<String, String>
-        let articleLink = currentDictionary["link"]
-        
+        let articleLink = "http://www.readability.com/m?url=" + currentDictionary["link"]!
         let articleViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("idArticleViewController") as! ArticleViewController
         
-        articleViewController.articleURL = NSURL(string: articleLink!)
+        articleViewController.articleURL = NSURL(string: articleLink)
         
         showDetailViewController(articleViewController, sender: self)
     }
