@@ -98,13 +98,14 @@ class ArticlesTableViewController: UITableViewController, XMLParserDelegate {
         // Configure the cell...
         
         // Get first image from article and insert in cell image
-        
+        /*
         let url = NSURL(string: currentDictionary["link"]!)
         do {
             htmlContent = try NSString(contentsOfURL: url!, encoding: NSUTF8StringEncoding) as String
         } catch {
             print("error")
         }
+*/
         //print(htmlContent)
         /*
         if imageSource != blankImage {
