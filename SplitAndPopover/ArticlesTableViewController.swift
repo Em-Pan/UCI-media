@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ArticlesTableViewController: UITableViewController, XMLParserDelegate {
     
@@ -16,6 +17,7 @@ class ArticlesTableViewController: UITableViewController, XMLParserDelegate {
         xmlParser = XMLParser()
         xmlParser.delegate = self
         xmlParser.startParsingWithContentsOfURL(url)
+        navigationController?.navigationBar.topItem!.title = "New University » News"
     }
     
     @IBAction func aeTab(sender: AnyObject) {
@@ -23,6 +25,7 @@ class ArticlesTableViewController: UITableViewController, XMLParserDelegate {
         xmlParser = XMLParser()
         xmlParser.delegate = self
         xmlParser.startParsingWithContentsOfURL(url)
+        navigationController?.navigationBar.topItem!.title = "New University » A & E"
         
     }
     
@@ -31,6 +34,7 @@ class ArticlesTableViewController: UITableViewController, XMLParserDelegate {
         xmlParser = XMLParser()
         xmlParser.delegate = self
         xmlParser.startParsingWithContentsOfURL(url)
+        navigationController?.navigationBar.topItem!.title = "New University » Features"
     }
     
     @IBAction func sportsTab(sender: AnyObject) {
@@ -38,10 +42,12 @@ class ArticlesTableViewController: UITableViewController, XMLParserDelegate {
         xmlParser = XMLParser()
         xmlParser.delegate = self
         xmlParser.startParsingWithContentsOfURL(url)
+        navigationController?.navigationBar.topItem!.title = "New University » Sports"
     }
     
     @IBAction func opinionTab(sender: AnyObject) {
         currentCategory = "opinion"
+        navigationController?.navigationBar.topItem!.title = "New University » Opinion"
     }
     
     var titles = [String]()
@@ -58,14 +64,15 @@ class ArticlesTableViewController: UITableViewController, XMLParserDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Configure back button when viewing an article
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back to Articles", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
+        navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        
         let url = NSURL(string: "https://feeds.feedburner.com/newuniversitynews")!
         xmlParser = XMLParser()
         xmlParser.delegate = self
         xmlParser.startParsingWithContentsOfURL(url)
-        /*
-        for i in xmlParser.arrParsedData {
-        print(i)
-        }*/
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -94,17 +101,52 @@ class ArticlesTableViewController: UITableViewController, XMLParserDelegate {
         let blankImage = "https://s0.wp.com/i/blank.jpg"
         
         myCell.cellTitle.text = currentDictionary["title"]
-        myCell.cellPubDate.text = currentDictionary["pubDate"]! + "d ago"
+        if (Int(currentDictionary["pubDate"]!)! >  1) {
+            myCell.cellPubDate.text = currentDictionary["pubDate"]! + "d ago"
+        } else if (Int(currentDictionary["pubDate"]!)! == 1) {
+            myCell.cellPubDate.text = "Yesterday"
+        } else {
+            myCell.cellPubDate.text = "Today"
+        }
         // Configure the cell...
         
         // Get first image from article and insert in cell image
         /*
-        let url = NSURL(string: currentDictionary["link"]!)
-        do {
-            htmlContent = try NSString(contentsOfURL: url!, encoding: NSUTF8StringEncoding) as String
-        } catch {
-            print("error")
+        let url = NSURL(string: "https://readability.com/api/content/v1/parser?url=" + currentDictionary["link"]! + "&token=feb9f63784ab762c652c9bf50579b8422b2bd049")!
+
+        
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) -> Void in
+            
+            if let urlContent = data {
+                do {
+                    var imageURL = ""
+                    let jsonResult = try NSJSONSerialization.JSONObjectWithData(urlContent, options: NSJSONReadingOptions.MutableContainers)
+                    if jsonResult["lead_image_url"] != nil {
+                        imageURL = jsonResult["lead_image_url"] as! String
+                    }
+                    if (imageURL.lowercaseString.rangeOfString("http://www.newuniversity.org/wp-content/uploads/") != nil ) {
+                        print(imageURL)
+                        let url = NSURL(string: imageURL)
+                        let imageData = NSData(contentsOfURL: url!)
+                        myCell.cellImage.image = UIImage(data: imageData!)
+                    }
+                    
+                    
+                } catch{
+                    print("JSON serialization error")
+                }
+                
+                
+            } else {
+                
+                print("Retrieval failed")
+                
+            }
+            
         }
+        
+        task.resume()
+
 */
         //print(htmlContent)
         /*
@@ -126,7 +168,7 @@ class ArticlesTableViewController: UITableViewController, XMLParserDelegate {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let currentDictionary = xmlParser.arrParsedData[indexPath.row] as Dictionary<String, String>
-        let articleLink = "http://www.readability.com/m?url=" + currentDictionary["link"]!
+        let articleLink = "https://readability.com/m?url=" + currentDictionary["link"]!
         let articleViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("idArticleViewController") as! ArticleViewController
         
         articleViewController.articleURL = NSURL(string: articleLink)
