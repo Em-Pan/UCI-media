@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C036410B19C9E1FF0096185A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C036410A19C9E1FF0096185A /* AppDelegate.swift */; };
-		C036411019C9E1FF0096185A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C036410E19C9E1FF0096185A /* Main.storyboard */; };
+		C036411019C9E1FF0096185A /* men.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C036410E19C9E1FF0096185A /* men.storyboard */; };
 		C036411219C9E1FF0096185A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C036411119C9E1FF0096185A /* Images.xcassets */; };
 		C036411519C9E1FF0096185A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C036411319C9E1FF0096185A /* LaunchScreen.xib */; };
 		C036412119C9E1FF0096185A /* SplitAndPopoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C036412019C9E1FF0096185A /* SplitAndPopoverTests.swift */; };
@@ -17,13 +17,14 @@
 		C036412F19C9E32B0096185A /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C036412E19C9E32B0096185A /* ArticleViewController.swift */; };
 		C036413119C9E33A0096185A /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C036413019C9E33A0096185A /* ContainerViewController.swift */; };
 		C03BDB4F19D0B36D002537F1 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BDB4E19D0B36D002537F1 /* PopoverViewController.swift */; };
-		C1B0FCE11C028F730007510F /* citation.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCDB1C028F730007510F /* citation.png */; settings = {ASSET_TAGS = (); }; };
-		C1B0FCE21C028F730007510F /* New U Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCDC1C028F730007510F /* New U Logo.jpg */; settings = {ASSET_TAGS = (); }; };
-		C1B0FCE31C028F730007510F /* comedy2.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCDD1C028F730007510F /* comedy2.png */; settings = {ASSET_TAGS = (); }; };
-		C1B0FCE41C028F730007510F /* edit18.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCDE1C028F730007510F /* edit18.png */; settings = {ASSET_TAGS = (); }; };
-		C1B0FCE51C028F730007510F /* news29.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCDF1C028F730007510F /* news29.png */; settings = {ASSET_TAGS = (); }; };
-		C1B0FCE61C028F730007510F /* soccer19.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCE01C028F730007510F /* soccer19.png */; settings = {ASSET_TAGS = (); }; };
-		C1B0FCE81C0294710007510F /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B0FCE71C0294710007510F /* cell.swift */; settings = {ASSET_TAGS = (); }; };
+		C186BDEA1C05396B00BAC806 /* anteater media launchscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = C186BDE91C05396B00BAC806 /* anteater media launchscreen.png */; };
+		C1B0FCE11C028F730007510F /* citation.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCDB1C028F730007510F /* citation.png */; };
+		C1B0FCE21C028F730007510F /* New U Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCDC1C028F730007510F /* New U Logo.jpg */; };
+		C1B0FCE31C028F730007510F /* comedy2.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCDD1C028F730007510F /* comedy2.png */; };
+		C1B0FCE41C028F730007510F /* edit18.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCDE1C028F730007510F /* edit18.png */; };
+		C1B0FCE51C028F730007510F /* news29.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCDF1C028F730007510F /* news29.png */; };
+		C1B0FCE61C028F730007510F /* soccer19.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B0FCE01C028F730007510F /* soccer19.png */; };
+		C1B0FCE81C0294710007510F /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B0FCE71C0294710007510F /* cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,7 @@
 		C036410519C9E1FF0096185A /* UCI-Media-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UCI-Media-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C036410919C9E1FF0096185A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C036410A19C9E1FF0096185A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C036410F19C9E1FF0096185A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C036410F19C9E1FF0096185A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/men.storyboard; sourceTree = "<group>"; };
 		C036411119C9E1FF0096185A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C036411419C9E1FF0096185A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C036411A19C9E1FF0096185A /* UCI-Media-App.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UCI-Media-App.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +52,7 @@
 		C036412E19C9E32B0096185A /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		C036413019C9E33A0096185A /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		C03BDB4E19D0B36D002537F1 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		C186BDE91C05396B00BAC806 /* anteater media launchscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anteater media launchscreen.png"; sourceTree = "<group>"; };
 		C1B0FCDB1C028F730007510F /* citation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = citation.png; sourceTree = "<group>"; };
 		C1B0FCDC1C028F730007510F /* New U Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "New U Logo.jpg"; sourceTree = "<group>"; };
 		C1B0FCDD1C028F730007510F /* comedy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comedy2.png; sourceTree = "<group>"; };
@@ -112,8 +114,9 @@
 				C1B0FCDE1C028F730007510F /* edit18.png */,
 				C1B0FCDF1C028F730007510F /* news29.png */,
 				C1B0FCE01C028F730007510F /* soccer19.png */,
-				C036410E19C9E1FF0096185A /* Main.storyboard */,
+				C036410E19C9E1FF0096185A /* men.storyboard */,
 				C036411119C9E1FF0096185A /* Images.xcassets */,
+				C186BDE91C05396B00BAC806 /* anteater media launchscreen.png */,
 				C036411319C9E1FF0096185A /* LaunchScreen.xib */,
 				C036410819C9E1FF0096185A /* Supporting Files */,
 			);
@@ -230,11 +233,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C036411019C9E1FF0096185A /* Main.storyboard in Resources */,
+				C036411019C9E1FF0096185A /* men.storyboard in Resources */,
 				C1B0FCE41C028F730007510F /* edit18.png in Resources */,
 				C1B0FCE21C028F730007510F /* New U Logo.jpg in Resources */,
 				C1B0FCE61C028F730007510F /* soccer19.png in Resources */,
 				C036411519C9E1FF0096185A /* LaunchScreen.xib in Resources */,
+				C186BDEA1C05396B00BAC806 /* anteater media launchscreen.png in Resources */,
 				C1B0FCE11C028F730007510F /* citation.png in Resources */,
 				C1B0FCE51C028F730007510F /* news29.png in Resources */,
 				C036411219C9E1FF0096185A /* Images.xcassets in Resources */,
@@ -285,12 +289,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C036410E19C9E1FF0096185A /* Main.storyboard */ = {
+		C036410E19C9E1FF0096185A /* men.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C036410F19C9E1FF0096185A /* Base */,
 			);
-			name = Main.storyboard;
+			name = men.storyboard;
 			sourceTree = "<group>";
 		};
 		C036411319C9E1FF0096185A /* LaunchScreen.xib */ = {
@@ -338,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -374,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

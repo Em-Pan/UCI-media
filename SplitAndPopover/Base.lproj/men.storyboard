@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xCx-oC-LJn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xCx-oC-LJn">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Article View Controller-->
         <scene sceneID="nR9-zG-dtx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qnd-aJ-FqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="idArticleViewController" id="eaN-1E-hrd" customClass="ArticleViewController" customModule="UCI_Media_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hb0-T2-AeQ"/>
@@ -23,26 +22,11 @@
                                 <rect key="frame" x="208" y="267" width="173" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8NS-cO-Nur">
-                                <rect key="frame" x="0.0" y="555" width="600" height="45"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="6Yg-fq-dlm"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bgh-aA-vQr"/>
-                                    <barButtonItem title="Publish Date" id="3LJ-nu-pwA">
-                                        <connections>
-                                            <action selector="showPublishDate:" destination="eaN-1E-hrd" id="Kgz-Pr-Qc2"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OYE-8U-uuG">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="555"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
@@ -50,25 +34,21 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OYE-8U-uuG" firstAttribute="top" secondItem="1Qh-AD-vck" secondAttribute="topMargin" id="CyO-3T-ANB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8NS-cO-Nur" secondAttribute="trailing" constant="-16" id="c2z-9b-MKL"/>
-                            <constraint firstItem="vcH-xY-vm2" firstAttribute="top" secondItem="8NS-cO-Nur" secondAttribute="bottom" id="crW-es-xa6"/>
+                            <constraint firstItem="OYE-8U-uuG" firstAttribute="top" secondItem="1Qh-AD-vck" secondAttribute="topMargin" id="5x6-XM-7zM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OYE-8U-uuG" secondAttribute="trailing" constant="-20" id="AQb-uD-zOC"/>
+                            <constraint firstItem="OYE-8U-uuG" firstAttribute="centerY" secondItem="1Qh-AD-vck" secondAttribute="centerY" id="Idx-fv-djQ"/>
+                            <constraint firstItem="vcH-xY-vm2" firstAttribute="top" secondItem="OYE-8U-uuG" secondAttribute="bottom" id="XFH-U6-8Bx"/>
                             <constraint firstAttribute="centerX" secondItem="U9V-Rn-GH4" secondAttribute="centerX" id="d4e-oE-suE"/>
-                            <constraint firstItem="8NS-cO-Nur" firstAttribute="top" secondItem="OYE-8U-uuG" secondAttribute="bottom" id="fqq-c2-tod"/>
-                            <constraint firstItem="OYE-8U-uuG" firstAttribute="leading" secondItem="1Qh-AD-vck" secondAttribute="leadingMargin" constant="-20" id="g0Q-da-Kei"/>
-                            <constraint firstItem="8NS-cO-Nur" firstAttribute="top" secondItem="OYE-8U-uuG" secondAttribute="bottom" id="iZ9-gI-aJM"/>
-                            <constraint firstItem="OYE-8U-uuG" firstAttribute="top" secondItem="1Qh-AD-vck" secondAttribute="topMargin" id="ix8-8i-clb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="OYE-8U-uuG" secondAttribute="trailing" constant="-20" id="mH1-mz-oRY"/>
-                            <constraint firstItem="8NS-cO-Nur" firstAttribute="leading" secondItem="1Qh-AD-vck" secondAttribute="leadingMargin" constant="-16" id="tIc-Qq-8dg"/>
+                            <constraint firstItem="OYE-8U-uuG" firstAttribute="leading" secondItem="1Qh-AD-vck" secondAttribute="leadingMargin" constant="-20" id="jWi-1O-wu8"/>
+                            <constraint firstItem="OYE-8U-uuG" firstAttribute="centerX" secondItem="1Qh-AD-vck" secondAttribute="centerX" id="qG3-R3-hoS"/>
                             <constraint firstAttribute="centerY" secondItem="U9V-Rn-GH4" secondAttribute="centerY" constant="22.5" id="uXi-F2-4Fd"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="pubDateButtonItem" destination="3LJ-nu-pwA" id="dzE-pt-5Pp"/>
-                        <outlet property="toolbar" destination="8NS-cO-Nur" id="dOc-wH-pX9"/>
                         <outlet property="webview" destination="OYE-8U-uuG" id="cmR-Ja-cKm"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qnd-aJ-FqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="692" y="1149"/>
         </scene>
@@ -91,7 +71,7 @@
                                     <constraint firstAttribute="height" constant="80" id="cjT-Ua-TDa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -230,6 +210,7 @@
         <scene sceneID="vW7-TM-9lO">
             <objects>
                 <navigationController toolbarHidden="NO" id="kjF-R0-qnx" sceneMemberID="viewController">
+                    <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="s21-tg-w73">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

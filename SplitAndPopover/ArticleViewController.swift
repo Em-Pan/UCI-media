@@ -13,8 +13,6 @@ class ArticleViewController: UIViewController, UIPopoverPresentationControllerDe
 
     @IBOutlet weak var webview: UIWebView!
     
-    @IBOutlet weak var toolbar: UIToolbar!
-    
     @IBOutlet weak var pubDateButtonItem: UIBarButtonItem!
     
     
@@ -31,8 +29,7 @@ class ArticleViewController: UIViewController, UIPopoverPresentationControllerDe
         // Do any additional setup after loading the view.
         
         webview.hidden = true
-        toolbar.hidden = true
-        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "fasfaf", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
         tutorialsButtonItem = UIBarButtonItem(title: "Tutorials", style: UIBarButtonItemStyle.Plain, target: self, action: "showTutorialsViewController")
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("handleFirstViewControllerDisplayModeChangeWithNotification:"), name: "PrimaryVCDisplayModeChangeNotification", object: nil)
@@ -51,9 +48,7 @@ class ArticleViewController: UIViewController, UIPopoverPresentationControllerDe
             }
             
         
-            if self.traitCollection.verticalSizeClass == UIUserInterfaceSizeClass.Compact{
-                toolbar.items?.insert(self.splitViewController!.displayModeButtonItem(), atIndex: 0)
-            }
+
         }
     }
     
@@ -80,16 +75,7 @@ class ArticleViewController: UIViewController, UIPopoverPresentationControllerDe
         let displayModeObject = notification.object as? NSNumber
         let nextDisplayMode = displayModeObject?.integerValue
         
-        if toolbar.items?.count == 3{
-            toolbar.items?.removeAtIndex(0)
-        }
-        
-        if nextDisplayMode == UISplitViewControllerDisplayMode.PrimaryHidden.rawValue {
-            toolbar.items?.insert(tutorialsButtonItem, atIndex: 0)
-        }
-        else{
-            toolbar.items?.insert(splitViewController!.displayModeButtonItem(), atIndex: 0)
-        }
+
     }
  
     
